@@ -1,3 +1,11 @@
+FIXTURES = fixtures/admin.json \
+		   fixtures/matches.json \
+		   fixtures/players.json \
+		   fixtures/teams.json \
+		   fixtures/groups_fixture.json \
+		   fixtures/trainings.json
+
+
 build:
 	docker-compose build
 
@@ -21,4 +29,4 @@ migrations:
 	make migrate
 
 load-fixtures:
-	docker-compose exec web python ./manage.py loaddata fixtures/admin
+	docker-compose exec web python ./manage.py loaddata $(FIXTURES)
