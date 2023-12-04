@@ -1,2 +1,1 @@
-# Football Manager
- 
+# Football Manager API

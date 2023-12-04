@@ -6,3 +6,5 @@ django-environ==0.10.0
 djangorestframework
 drf-yasg
 Pillow
+django-filter
+dj_rest_auth
